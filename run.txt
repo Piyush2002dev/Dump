@@ -1,0 +1,7 @@
+uvicorn local_api:a--port 8000 - intake
+uvicorn local_api:app --port 8010 - validation
+uvicorn local_api:app --port 8000 - recommendation
+
+pip install -r requirements.txt
+
+//python -m uvicorn local_api:app --port 8000 --reload
